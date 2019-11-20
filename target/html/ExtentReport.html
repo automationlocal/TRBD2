@@ -1,0 +1,2833 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='http://cdn.rawgit.com/anshooarora/extentreports-java/6d3843c29c354373fafad29c03a1a89b7e06c374/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Extent</title>
+
+</head>
+
+	<body class='extent standard default hide-overflow bdd-report'>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Cucumber Report</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Nov 20, 2019 12:15:32 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>v3.0.6</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@RegressionTest-TRBD-1284</a></li>
+					<li><a href='#'>@RegressionTest-TRBD-1285</a></li>
+					<li><a href='#'>@RegressionTest-TRBD-1268</a></li>
+					<li><a href='#'>@RegressionTest-TRBD-1283</a></li>
+					<li><a href='#'>@RegressionTest-TRBD-1295</a></li>
+					<li><a href='#'>@RegressionTest-TRBD-1292</a></li>
+					<li><a href='#'>@RegressionTest-TRBD-1288</a></li>
+					<li><a href='#'>@RegressionTest-TRBD-1282</a></li>
+					<li><a href='#'>@RegressionTest-TRBD-1279</a></li>
+					<li><a href='#'>@RegressionTest-TRBD-1278</a></li>
+					<li><a href='#'>@RegressionTest-TRBD-1261</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1256</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1260</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1328</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1259</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1257</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1309</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1326</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1310</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1308</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1307</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1311</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1306</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1325</a></li>
+					<li><a href='#'>@SanityTest-TRBD-1324</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Features</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>1</span> feature(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Scenarios</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='64%'><span class='strong'>16</span> scenario(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='36%'>9</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m4 l4 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='66.393%'><span class='strong'>81</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='7.377%'>9</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='26.23%'>32</span> others
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Features</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Regression Related Scenarios</span>
+						<span class='test-time'>Nov 20, 2019 12:15:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='2' status='pass'>
+	<span class='duration right label'>0h 0m 49s+848ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">View search terms on Officers screener</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='3' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@RegressionTest-TRBD-1284</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">View search terms on Officers screener</span>
+			
+				<ul class='steps'>
+					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given That Application is launched with the url "https://businessdevelopment.mena.thomsonreuters.com/login"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='5' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User login to application with "trbd.mena2@thomsonreuters.com" and "TestUser2"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='6' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Homepage should get display</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='7' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='8' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then verify search terms on Officers Screen</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='9' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@RegressionTest-TRBD-1285</span>
+	</div>
+	<span class='duration right label'>0h 0m 34s+127ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">View search terms on Companies screener</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='10' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='11' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='12' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='13' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify search terms on Companies Screen</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='14' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@RegressionTest-TRBD-1268</span>
+	</div>
+	<span class='duration right label'>0h 0m 31s+425ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Search by Officer Name [Officers screener]</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='15' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='16' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='17' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='18' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And I navigated to officer tab</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='19' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify search by Officer's name</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='20' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@RegressionTest-TRBD-1283</span>
+	</div>
+	<span class='duration right label'>0h 0m 29s+834ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">View search terms on News screener</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='21' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='22' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='23' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='24' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify search terms on News Screen</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='25' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@RegressionTest-TRBD-1295</span>
+	</div>
+	<span class='duration right label'>0h 0m 28s+343ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Search by Principal Activity [Companies screener]</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='26' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='27' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='28' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='29' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify search by Principal Activity</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='30' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@RegressionTest-TRBD-1292</span>
+	</div>
+	<span class='duration right label'>0h 0m 30s+317ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Filter by Brand / Agency [Companies screener]</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='31' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='32' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='33' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='34' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify filter by Brand/Agency</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='35' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@RegressionTest-TRBD-1288</span>
+	</div>
+	<span class='duration right label'>0h 0m 31s+832ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Filter by Company Name [Companies screener]</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='36' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='37' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='38' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='39' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify filter by Company Name</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='40' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@RegressionTest-TRBD-1282</span>
+	</div>
+	<span class='duration right label'>0h 0m 30s+132ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">View search terms on Research screener</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='41' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='42' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='43' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='44' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify search terms on Research Screen</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='45' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@RegressionTest-TRBD-1279</span>
+	</div>
+	<span class='duration right label'>0h 0m 29s+242ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Filter by Date [Research screener]</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='46' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='47' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='48' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='49' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify filter By Date on Research Screen</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='50' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@RegressionTest-TRBD-1278</span>
+	</div>
+	<span class='duration right label'>0h 0m 28s+341ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Filter by Company [Research screener]</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='51' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='52' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='53' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='54' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify filter By Company on Research Screen</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='55' status='pass'>
+	<div class='category-list'>
+		<span class='category label white-text'>@RegressionTest-TRBD-1261</span>
+	</div>
+	<span class='duration right label'>0h 0m 34s+711ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">Filter by Ownership Type [Companies screener]</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='56' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='57' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='58' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='59' class='node then pass' status='pass'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then verify filter By Ownership Type on Company Screen</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='60' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user clicks on Logout button,LoginPage should get display</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='61' class='node and pass' status='pass'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And close the browser</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='62'>
+					<div class='test-heading'>
+						<span class='test-name'>Daily Sanity Related Scenarios</span>
+						<span class='test-time'>Nov 20, 2019 12:21:30 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='scenariooutline node' test-id='63' status='pass'>
+	<span class='duration right label'>0h 0m 41s+436ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Login Page -TRBD - Valid Credentials</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='64' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@SanityTest-TRBD-1256</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Login Page -TRBD - Valid Credentials</span>
+			
+				<ul class='steps'>
+					<li test-id='65' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given That Application is launched with the url "https://businessdevelopment.mena.thomsonreuters.com/login"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='66' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User login to application with "trbd.mena2@thomsonreuters.com" and "TestUser2"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='67' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Homepage should get display</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='68' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When user clicks on Logout button,LoginPage should get display</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='69' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And close the browser</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='70' status='pass'>
+	<span class='duration right label'>0h 0m 18s+481ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Links to Marketing Page on the Login Page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='71' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@SanityTest-TRBD-1260</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Links to Marketing Page on the Login Page</span>
+			
+				<ul class='steps'>
+					<li test-id='72' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given That Application is launched with the url "https://businessdevelopment.mena.thomsonreuters.com/login"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='73' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User login Page is displayed</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='74' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Verify LoginPage Header Section and validate the links</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='75' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And close the browser</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='76' status='pass'>
+	<span class='duration right label'>0h 0m 24s+280ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Verifying forgot password link on login page</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='77' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@SanityTest-TRBD-1328</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Verifying forgot password link on login page</span>
+			
+				<ul class='steps'>
+					<li test-id='78' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given That Application is launched with the url "https://businessdevelopment.mena.thomsonreuters.com/login"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='79' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User login Page is displayed</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='80' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Verify forgot password link on login page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='81' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And close the browser</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='82' status='pass'>
+	<span class='duration right label'>0h 0m 28s+399ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">LegalStatiContentOnLoginpage</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='83' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@SanityTest-TRBD-1259</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">LegalStatiContentOnLoginpage</span>
+			
+				<ul class='steps'>
+					<li test-id='84' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given That Application is launched with the url "https://businessdevelopment.mena.thomsonreuters.com/login"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='85' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User login Page is displayed</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='86' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Verify LoginPage Footer Section and validate the links</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='87' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And close the browser</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='88' status='pass'>
+	<span class='duration right label'>0h 0m 37s+754ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">Login Page -TRBD -remember me</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='89' class='node scenario pass' status='pass'>
+			<div class='category-list'>
+				<span class='category label white-text'>@SanityTest-TRBD-1257</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">Login Page -TRBD -remember me</span>
+			
+				<ul class='steps'>
+					<li test-id='90' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given That Application is launched with the url "https://businessdevelopment.mena.thomsonreuters.com/login"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='91' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User login to application with "trbd.mena2@thomsonreuters.com" and "TestUser2" and verify Credentials</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='92' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Homepage should get display</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='93' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When user clicks on Logout button,LoginPage should get display</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='94' class='node then pass' status='pass'><b>Then</b>
+						<span class="bdd-step-name">Then Check System stored the specified Username details</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='95' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And close the browser</span>
+							<div class='pre'>passed</div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenariooutline node' test-id='96' status='fail'>
+	<span class='duration right label'>0h 0m 47s+975ms</span>
+	<div class='desc'>
+		<b>ScenarioOutline</b>
+		<span class="desc-text">TRBDAccountLogout</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='97' class='node scenario fail' status='fail'>
+			<div class='category-list'>
+				<span class='category label white-text'>@SanityTest-TRBD-1309</span>
+			</div>
+			
+			<b>Scenario</b>
+			
+			<span class="bdd-step-name">TRBDAccountLogout</span>
+			
+				<ul class='steps'>
+					<li test-id='98' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given That Application is launched with the url "https://businessdevelopment.mena.thomsonreuters.com/login"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='99' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When User login to application with "trbd.mena2@thomsonreuters.com" and "TestUser2"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='100' class='node then fail' status='fail'><b>Then</b>
+						<span class="bdd-step-name">Then Homepage should get display</span>
+							<div class='pre'><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:85)
+</pre></div>
+					</li>
+				</ul>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='101' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@SanityTest-TRBD-1326</span>
+	</div>
+	<span class='duration right label'>0h 0m 21s+491ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">TRBD Build List Result without any filter combination</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='102' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='103' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:98)
+</pre></div>
+			
+		</li>
+		<li test-id='104' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i Click on Build List Button without selecting any filters</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='105' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify serach result page contents</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='106' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i clicked on Company Name in the Companies tab</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='107' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify Company related information</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='108' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on Return Back,search result page should display</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='109' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@SanityTest-TRBD-1310</span>
+	</div>
+	<span class='duration right label'>0h 0m 21s+441ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">TRBDBuildListFilterBar</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='110' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='111' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:117)
+</pre></div>
+			
+		</li>
+		<li test-id='112' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i select Region,Sectors and click on Build List</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='113' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify serach result page contents</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='114' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i clicked on Company Name in the Companies tab</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='115' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify Company related information</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='116' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on Return Back,search result page should display</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='117' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@SanityTest-TRBD-1308</span>
+	</div>
+	<span class='duration right label'>0h 0m 21s+418ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">TR My Settings</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='118' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='119' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:138)
+</pre></div>
+			
+		</li>
+		<li test-id='120' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i click on My Settings tab</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='121' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then My Settings related info.section should get display</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='122' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@SanityTest-TRBD-1307</span>
+	</div>
+	<span class='duration right label'>0h 0m 21s+431ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">TR My Accounts</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='123' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='124' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:156)
+</pre></div>
+			
+		</li>
+		<li test-id='125' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i click on My Accounts tab</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='126' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Page should navigate to My Account Page</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='127' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@SanityTest-TRBD-1311</span>
+	</div>
+	<span class='duration right label'>0h 0m 21s+483ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">TRBD Build List Result without any filter combination</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='128' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='129' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:172)
+</pre></div>
+			
+		</li>
+		<li test-id='130' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i Click on Build List Button without selecting any filters</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='131' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify serach result page contents on left side of the page</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='132' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Center of the page</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='133' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i clicked on Company Name in the Companies tab</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='134' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on Return Back,search result page should display</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='135' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And Right side of the page</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='136' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@SanityTest-TRBD-1306</span>
+	</div>
+	<span class='duration right label'>0h 0m 21s+411ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">TRBD Home Dashboard</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='137' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='138' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:193)
+</pre></div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='139' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@SanityTest-TRBD-1325</span>
+	</div>
+	<span class='duration right label'>0h 0m 21s+425ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">TRBD Build List Result without any filter combination</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='140' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='141' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:207)
+</pre></div>
+			
+		</li>
+		<li test-id='142' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i Click on Build List Button without selecting any filters</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='143' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify serach result page contents</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='144' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i clicked on Company Name in the Companies tab</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='145' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify Company related information</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='146' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on Return Back,search result page should display</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='147' status='fail'>
+	<div class='category-list'>
+		<span class='category label white-text'>@SanityTest-TRBD-1324</span>
+	</div>
+	<span class='duration right label'>0h 0m 21s+374ms</span>
+	<div class='desc'>
+		<b>Scenario</b>
+		<span class="desc-text">TRBD Build List Result without any filter combination</span>
+	</div>
+	<ul class='steps'>
+		<li test-id='148' class='node when pass' status='pass'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When User clicks on Title</span>
+				<div class='pre'>passed</div>
+			
+		</li>
+		<li test-id='149' class='node then fail' status='fail'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Homepage should get display</span>
+				<div class='pre'><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:227)
+</pre></div>
+			
+		</li>
+		<li test-id='150' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i Click on Build List Button without selecting any filters</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='151' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify serach result page contents</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='152' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When i clicked on Company Name in the Companies tab</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='153' class='node then skip' status='skip'>
+			
+			<b>Then</b>
+			
+			<span class="bdd-step-name">Then Verify Company related information</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='154' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And click on Return Back,search result page should display</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='155' class='node when skip' status='skip'>
+			
+			<b>When</b>
+			
+			<span class="bdd-step-name">When user clicks on Logout button,LoginPage should get display</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+		<li test-id='156' class='node and skip' status='skip'>
+			
+			<b>And</b>
+			
+			<span class="bdd-step-name">And close the browser</span>
+				<div class='pre'>skipped</div>
+			
+		</li>
+	</ul>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1284</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:15:32 PM</td>
+										<td class='linked' test-id='3'>Regression Related Scenarios.View search terms on Officers screener.View search terms on Officers screener</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1285</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:16:22 PM</td>
+										<td class='linked' test-id='9'>Regression Related Scenarios.View search terms on Companies screener</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1268</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:16:56 PM</td>
+										<td class='linked' test-id='14'>Regression Related Scenarios.Search by Officer Name [Officers screener]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1283</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:17:27 PM</td>
+										<td class='linked' test-id='20'>Regression Related Scenarios.View search terms on News screener</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1295</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:17:57 PM</td>
+										<td class='linked' test-id='25'>Regression Related Scenarios.Search by Principal Activity [Companies screener]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1292</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:18:26 PM</td>
+										<td class='linked' test-id='30'>Regression Related Scenarios.Filter by Brand / Agency [Companies screener]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1288</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:18:56 PM</td>
+										<td class='linked' test-id='35'>Regression Related Scenarios.Filter by Company Name [Companies screener]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1282</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:19:28 PM</td>
+										<td class='linked' test-id='40'>Regression Related Scenarios.View search terms on Research screener</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1279</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:19:58 PM</td>
+										<td class='linked' test-id='45'>Regression Related Scenarios.Filter by Date [Research screener]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1278</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:20:27 PM</td>
+										<td class='linked' test-id='50'>Regression Related Scenarios.Filter by Company [Research screener]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@RegressionTest-TRBD-1261</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:20:55 PM</td>
+										<td class='linked' test-id='55'>Regression Related Scenarios.Filter by Ownership Type [Companies screener]</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1256</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:21:30 PM</td>
+										<td class='linked' test-id='64'>Daily Sanity Related Scenarios.Login Page -TRBD - Valid Credentials.Login Page -TRBD - Valid Credentials</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1260</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:22:12 PM</td>
+										<td class='linked' test-id='71'>Daily Sanity Related Scenarios.Links to Marketing Page on the Login Page.Links to Marketing Page on the Login Page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1328</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:22:30 PM</td>
+										<td class='linked' test-id='77'>Daily Sanity Related Scenarios.Verifying forgot password link on login page.Verifying forgot password link on login page</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1259</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:22:54 PM</td>
+										<td class='linked' test-id='83'>Daily Sanity Related Scenarios.LegalStatiContentOnLoginpage.LegalStatiContentOnLoginpage</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1257</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:23:23 PM</td>
+										<td class='linked' test-id='89'>Daily Sanity Related Scenarios.Login Page -TRBD -remember me.Login Page -TRBD -remember me</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1309</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:24:01 PM</td>
+										<td class='linked' test-id='97'>Daily Sanity Related Scenarios.TRBDAccountLogout.TRBDAccountLogout</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1326</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:24:49 PM</td>
+										<td class='linked' test-id='101'>Daily Sanity Related Scenarios.TRBD Build List Result without any filter combination</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1310</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:25:11 PM</td>
+										<td class='linked' test-id='109'>Daily Sanity Related Scenarios.TRBDBuildListFilterBar</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1308</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:25:32 PM</td>
+										<td class='linked' test-id='117'>Daily Sanity Related Scenarios.TR My Settings</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1307</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:25:54 PM</td>
+										<td class='linked' test-id='122'>Daily Sanity Related Scenarios.TR My Accounts</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1311</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:26:16 PM</td>
+										<td class='linked' test-id='127'>Daily Sanity Related Scenarios.TRBD Build List Result without any filter combination</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1306</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:26:37 PM</td>
+										<td class='linked' test-id='136'>Daily Sanity Related Scenarios.TRBD Home Dashboard</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1325</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:26:59 PM</td>
+										<td class='linked' test-id='139'>Daily Sanity Related Scenarios.TRBD Build List Result without any filter combination</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@SanityTest-TRBD-1324</span>
+						<span class='category-status right'>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2019 12:27:21 PM</td>
+										<td class='linked' test-id='147'>Daily Sanity Related Scenarios.TRBD Build List Result without any filter combination</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>9</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Nov 20, 2019 12:24:32 PM</td>
+                                                        <td class='linked' test-id='100'>Daily Sanity Related Scenarios.TRBDAccountLogout.TRBDAccountLogout.Then Homepage should get display</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:85)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 20, 2019 12:24:54 PM</td>
+                                                        <td class='linked' test-id='103'>Daily Sanity Related Scenarios.TRBD Build List Result without any filter combination.Then Homepage should get display</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:98)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 20, 2019 12:25:16 PM</td>
+                                                        <td class='linked' test-id='111'>Daily Sanity Related Scenarios.TRBDBuildListFilterBar.Then Homepage should get display</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:117)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 20, 2019 12:25:37 PM</td>
+                                                        <td class='linked' test-id='119'>Daily Sanity Related Scenarios.TR My Settings.Then Homepage should get display</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:138)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 20, 2019 12:25:59 PM</td>
+                                                        <td class='linked' test-id='124'>Daily Sanity Related Scenarios.TR My Accounts.Then Homepage should get display</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:156)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 20, 2019 12:26:21 PM</td>
+                                                        <td class='linked' test-id='129'>Daily Sanity Related Scenarios.TRBD Build List Result without any filter combination.Then Homepage should get display</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:172)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 20, 2019 12:26:43 PM</td>
+                                                        <td class='linked' test-id='138'>Daily Sanity Related Scenarios.TRBD Home Dashboard.Then Homepage should get display</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:193)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 20, 2019 12:27:04 PM</td>
+                                                        <td class='linked' test-id='141'>Daily Sanity Related Scenarios.TRBD Build List Result without any filter combination.Then Homepage should get display</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:207)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Nov 20, 2019 12:27:26 PM</td>
+                                                        <td class='linked' test-id='149'>Daily Sanity Related Scenarios.TRBD Build List Result without any filter combination.Then Homepage should get display</td>
+                                                        <td><pre><pre>java.lang.AssertionError: Home Screen is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at stepdefinition.HomeStep.verifyHomePageIsDisplayed(HomeStep.java:73)
+	at ?.Then Homepage should get display(Sanity_Flows_New.feature:227)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Features
+					<div class='panel-lead'>2</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Scenarios
+					<div class='panel-lead'>25</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>122</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Nov 20, 2019 12:15:32 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Nov 20, 2019 12:27:43 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>730,867ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>User Name</td>
+								<td>Vinay Bhat</td>
+							</tr>
+							<tr>
+								<td>Application Name</td>
+								<td>Zawya</td>
+							</tr>
+							<tr>
+								<td>Operating System Type</td>
+								<td>Windows 10</td>
+							</tr>
+							<tr>
+								<td>Environment</td>
+								<td>QA</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1284</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1285</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1268</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1283</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1295</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1292</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1288</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1282</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1279</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1278</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@RegressionTest-TRBD-1261</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1256</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1260</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1328</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1259</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1257</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1309</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1326</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1310</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1308</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1307</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1311</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1306</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1325</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td>@SanityTest-TRBD-1324</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<div id='testrunner-logs-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>TestRunner Logs</h5>
+		
+		<div class='card-panel'>
+				Test Execution Cucumber Report
+		</div>
+	</div>
+</div>
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 1,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 1,
+				
+				passChild: 16,
+				failChild: 9,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				exceptionsChild: 9,
+				
+				passGrandChild: 81,
+				failGrandChild: 9,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 32,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 41,
+			};
+		</script>
+		
+			<script src='http://cdn.rawgit.com/anshooarora/extentreports-java/5ed7b0c339b51aa347b44ccaa2e2ff29905b2f9f/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+	</body>
+	
+</html>

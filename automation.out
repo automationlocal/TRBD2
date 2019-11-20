@@ -1,0 +1,37 @@
+20/11/2019 18:15:29 stepdefinition.LoginStep Application is launched
+20/11/2019 18:15:31 pageObjects.LoginPage Username and Password fields are displayed
+20/11/2019 18:15:32 stepdefinition.LoginStep Remeber Check box is already selected
+20/11/2019 18:15:32 stepdefinition.LoginStep User entered Username :trbd.mena2@thomsonreuters.com and Password :TestUser2 ,and clicked on SignIn Button
+20/11/2019 18:15:42 stepdefinition.LoginStep The entered Username or Password is Correct
+20/11/2019 18:15:42 stepdefinition.LoginStep Another Session created page is displayed,and clicked on SignIn Anyway button
+20/11/2019 18:15:48 pageObjects.HomePage HomePage is Loaded
+20/11/2019 18:15:49 stepdefinition.HomeStep Selected Default value for Region field
+20/11/2019 18:15:49 stepdefinition.HomeStep Selected Default value for Sector Field
+20/11/2019 18:15:52 stepdefinition.HomeStep Clicked on Build List Button
+20/11/2019 18:15:56 pageObjects.BuildListSearchResultPage Exception in isScreenDisplayed method in Build List Search Result Page
+20/11/2019 18:16:02 pageObjects.HomePage Exception in isScreenDisplayed method in Homepage
+20/11/2019 18:16:02 stepdefinition.HomeStep Homepage is not displayed
+20/11/2019 18:16:08 pageObjects.HomePage Exception in isScreenDisplayed method in Homepage
+20/11/2019 18:16:08 stepdefinition.HomeStep Homepage is not displayed
+20/11/2019 18:16:14 pageObjects.HomePage Exception in isScreenDisplayed method in Homepage
+20/11/2019 18:16:14 stepdefinition.HomeStep Homepage is not displayed
+20/11/2019 18:16:20 pageObjects.HomePage Exception in isScreenDisplayed method in Homepage
+20/11/2019 18:16:20 stepdefinition.HomeStep Homepage is not displayed
+20/11/2019 18:16:26 pageObjects.HomePage Exception in isScreenDisplayed method in Homepage
+20/11/2019 18:16:26 stepdefinition.HomeStep Homepage is not displayed
+20/11/2019 18:16:32 pageObjects.HomePage Exception in isScreenDisplayed method in Homepage
+20/11/2019 18:16:32 stepdefinition.HomeStep Homepage is not displayed
+20/11/2019 18:16:38 pageObjects.HomePage Exception in isScreenDisplayed method in Homepage
+20/11/2019 18:16:38 stepdefinition.HomeStep Homepage is not displayed
+20/11/2019 18:16:44 pageObjects.HomePage Exception in isScreenDisplayed method in Homepage
+20/11/2019 18:16:44 stepdefinition.HomeStep Homepage is not displayed
+20/11/2019 18:16:51 pageObjects.HomePage Exception in isScreenDisplayed method in Homepage
+20/11/2019 18:16:51 stepdefinition.HomeStep Homepage is not displayed
+20/11/2019 18:16:57 pageObjects.HomePage Exception in isScreenDisplayed method in Homepage
+20/11/2019 18:16:57 stepdefinition.HomeStep Homepage is not displayed
+20/11/2019 18:17:02 stepdefinition.LoginStep Application is launched
+20/11/2019 18:17:09 stepdefinition.LoginStep Application is launched
+20/11/2019 18:17:09 pageObjects.LoginPage Exception in isScreenDisplayed method in LoginScreen
+20/11/2019 18:17:09 stepdefinition.LoginStep Login page is not displayed
+20/11/2019 18:17:21 stepdefinition.LoginStep Application is launched
+20/11/2019 18:17:23 pageObjects.LoginPage Exception in isScreenDisplayed method in LoginScreen

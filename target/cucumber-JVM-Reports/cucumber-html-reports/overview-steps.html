@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 42) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber-JVM-Example</td>
+              <td>42</td>
+            <td>13 Sep 2019, 16:58</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.clickOnFirstCompanyNameInTable()</td>
+              <td>5</td>
+              <td class="duration" data-value="2030048900">2.030</td>
+              <td class="duration" data-value="2030048900">2.156</td>
+              <td class="duration" data-value="10150244500">10.150</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifyFilterByBrandOrAgency()</td>
+              <td>1</td>
+              <td class="duration" data-value="17919373500">17.919</td>
+              <td class="duration" data-value="17919373500">17.919</td>
+              <td class="duration" data-value="17919373500">17.919</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifyFilterByCompany()</td>
+              <td>1</td>
+              <td class="duration" data-value="16821850700">16.821</td>
+              <td class="duration" data-value="16821850700">16.821</td>
+              <td class="duration" data-value="16821850700">16.821</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifyFilterByCompanyName()</td>
+              <td>1</td>
+              <td class="duration" data-value="19411061200">19.411</td>
+              <td class="duration" data-value="19411061200">19.411</td>
+              <td class="duration" data-value="19411061200">19.411</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifyFilterByDate()</td>
+              <td>1</td>
+              <td class="duration" data-value="16157817000">16.157</td>
+              <td class="duration" data-value="16157817000">16.157</td>
+              <td class="duration" data-value="16157817000">16.157</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifyFilterByOwnerShipType()</td>
+              <td>1</td>
+              <td class="duration" data-value="18412951700">18.412</td>
+              <td class="duration" data-value="18412951700">18.412</td>
+              <td class="duration" data-value="18412951700">18.412</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifySearchByOfficerName()</td>
+              <td>1</td>
+              <td class="duration" data-value="23290420900">23.290</td>
+              <td class="duration" data-value="23290420900">23.290</td>
+              <td class="duration" data-value="23290420900">23.290</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifySearchByPrincipalActivity()</td>
+              <td>1</td>
+              <td class="duration" data-value="15512307700">15.512</td>
+              <td class="duration" data-value="15512307700">15.512</td>
+              <td class="duration" data-value="15512307700">15.512</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifySearchResultspageContents()</td>
+              <td>4</td>
+              <td class="duration" data-value="35145909100">35.145</td>
+              <td class="duration" data-value="35145909100">35.303</td>
+              <td class="duration" data-value="140583636400">2:20.583</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifySearchResultspageContentsOnCentreOfthePage()</td>
+              <td>1</td>
+              <td class="duration" data-value="31304637000">31.304</td>
+              <td class="duration" data-value="31304637000">31.304</td>
+              <td class="duration" data-value="31304637000">31.304</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifySearchResultspageContentsOnLeftSideOfthePage()</td>
+              <td>1</td>
+              <td class="duration" data-value="8914465600">8.914</td>
+              <td class="duration" data-value="8914465600">8.914</td>
+              <td class="duration" data-value="8914465600">8.914</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifySearchResultspageContentsOnRightsideOfthePage()</td>
+              <td>1</td>
+              <td class="duration" data-value="1020276100">1.020</td>
+              <td class="duration" data-value="1020276100">1.020</td>
+              <td class="duration" data-value="1020276100">1.020</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifySearchTermsOnCompaniesScreen()</td>
+              <td>1</td>
+              <td class="duration" data-value="20354107200">20.354</td>
+              <td class="duration" data-value="20354107200">20.354</td>
+              <td class="duration" data-value="20354107200">20.354</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifySearchTermsOnNewsScreen()</td>
+              <td>1</td>
+              <td class="duration" data-value="17856370800">17.856</td>
+              <td class="duration" data-value="17856370800">17.856</td>
+              <td class="duration" data-value="17856370800">17.856</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifySearchTermsOnOfficersScreen()</td>
+              <td>1</td>
+              <td class="duration" data-value="19960923500">19.960</td>
+              <td class="duration" data-value="19960923500">19.960</td>
+              <td class="duration" data-value="19960923500">19.960</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">BuildListSearchResultStep.verifySearchTermsOnResearchScreen()</td>
+              <td>1</td>
+              <td class="duration" data-value="18601043600">18.601</td>
+              <td class="duration" data-value="18601043600">18.601</td>
+              <td class="duration" data-value="18601043600">18.601</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CompanySearchResultStep.clickOnReslutbackButton()</td>
+              <td>5</td>
+              <td class="duration" data-value="2620484040">2.620</td>
+              <td class="duration" data-value="2620484040">3.670</td>
+              <td class="duration" data-value="13102420200">13.102</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CompanySearchResultStep.verifySelectedCompanyDetails()</td>
+              <td>4</td>
+              <td class="duration" data-value="7044316275">7.044</td>
+              <td class="duration" data-value="7044316275">7.123</td>
+              <td class="duration" data-value="28177265100">28.177</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomeStep.clickOnBuildListWithoutFilters()</td>
+              <td>4</td>
+              <td class="duration" data-value="3408237375">3.408</td>
+              <td class="duration" data-value="3408237375">3.433</td>
+              <td class="duration" data-value="13632949500">13.632</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomeStep.clickOnLogoutButton()</td>
+              <td>22</td>
+              <td class="duration" data-value="1608703486">1.608</td>
+              <td class="duration" data-value="1608703486">4.719</td>
+              <td class="duration" data-value="35391476700">35.391</td>
+              <td class="failed">95.45%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomeStep.enterRegionSectorDetails()</td>
+              <td>12</td>
+              <td class="duration" data-value="4387462416">4.387</td>
+              <td class="duration" data-value="4387462416">4.626</td>
+              <td class="duration" data-value="52649549000">52.649</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomeStep.verifyHomePageIsDisplayed()</td>
+              <td>22</td>
+              <td class="duration" data-value="831916500">0.831</td>
+              <td class="duration" data-value="831916500">10.345</td>
+              <td class="duration" data-value="18302163000">18.302</td>
+              <td class="failed">95.45%</td>
+            </tr>
+                      <tr>
+              <td class="location">HomeStep.verifyHomepageDahsboardItems()</td>
+              <td>1</td>
+              <td class="duration" data-value="10043834600">10.043</td>
+              <td class="duration" data-value="10043834600">10.043</td>
+              <td class="duration" data-value="10043834600">10.043</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.embedScreenshot(Scenario)</td>
+              <td>26</td>
+              <td class="duration" data-value="905252980">0.905</td>
+              <td class="duration" data-value="905252980">1.284</td>
+              <td class="duration" data-value="23536577500">23.536</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.ss()</td>
+              <td>26</td>
+              <td class="duration" data-value="133992">0.000</td>
+              <td class="duration" data-value="133992">0.000</td>
+              <td class="duration" data-value="3483800">0.003</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.checkSystemStoredDetails()</td>
+              <td>1</td>
+              <td class="duration" data-value="96066300">0.096</td>
+              <td class="duration" data-value="96066300">0.096</td>
+              <td class="duration" data-value="96066300">0.096</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.closeBrowser()</td>
+              <td>25</td>
+              <td class="duration" data-value="2170242464">2.170</td>
+              <td class="duration" data-value="2170242464">2.393</td>
+              <td class="duration" data-value="54256061600">54.256</td>
+              <td class="failed">92.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.launchApplication(String)</td>
+              <td>26</td>
+              <td class="duration" data-value="10414371192">10.414</td>
+              <td class="duration" data-value="10414371192">16.433</td>
+              <td class="duration" data-value="270773651000">4:30.773</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.verifyForgotPasswordLinkFunctionality()</td>
+              <td>1</td>
+              <td class="duration" data-value="2147144300">2.147</td>
+              <td class="duration" data-value="2147144300">2.147</td>
+              <td class="duration" data-value="2147144300">2.147</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.verifyLoginPageFooterSection()</td>
+              <td>1</td>
+              <td class="duration" data-value="13623745700">13.623</td>
+              <td class="duration" data-value="13623745700">13.623</td>
+              <td class="duration" data-value="13623745700">13.623</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.verifyLoginPageHeaderSection()</td>
+              <td>1</td>
+              <td class="duration" data-value="13369591500">13.369</td>
+              <td class="duration" data-value="13369591500">13.369</td>
+              <td class="duration" data-value="13369591500">13.369</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.verifyLoginPageIsDisplayed()</td>
+              <td>3</td>
+              <td class="duration" data-value="115274800">0.115</td>
+              <td class="duration" data-value="115274800">0.122</td>
+              <td class="duration" data-value="345824400">0.345</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.verifyUserCredentials(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2191457800">2.191</td>
+              <td class="duration" data-value="2191457800">2.191</td>
+              <td class="duration" data-value="2191457800">2.191</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStep.verifyUserLogin(String,String)</td>
+              <td>22</td>
+              <td class="duration" data-value="20310767022">20.310</td>
+              <td class="duration" data-value="20310767022">20.915</td>
+              <td class="duration" data-value="446836874500">7:26.836</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyAccountStep.verifyAndClickOnMyAccountsTab()</td>
+              <td>1</td>
+              <td class="duration" data-value="545626100">0.545</td>
+              <td class="duration" data-value="545626100">0.545</td>
+              <td class="duration" data-value="545626100">0.545</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyAccountStep.verifyMyAccountRelatedInfo()</td>
+              <td>1</td>
+              <td class="duration" data-value="3893917600">3.893</td>
+              <td class="duration" data-value="3893917600">3.893</td>
+              <td class="duration" data-value="3893917600">3.893</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MySettingsStep.validateMySettingsRelatedInfo()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MySettingsStep.verifyAndClickOnMySettingsTab()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>38</td>
+            <td>230</td>
+            <td class="duration">6.083</td>
+            <td class="duration">7:26.836</td>
+            <td class="duration">23:19.191</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
