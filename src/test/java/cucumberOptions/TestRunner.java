@@ -17,8 +17,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		glue="stepdefinition",
 		plugin= { "pretty","com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html","json:target/cucumber.json",
 				"html:target/selenium-reports"},
-		monochrome = true
-		
+				
+	
+				tags= {"@SanityTest-TRBD-1309,@SanityTest-TRBD-1326,@SanityTest-TRBD-1310,@SanityTest-TRBD-1325,@SanityTest-TRBD-1324"}
 
 		)
 

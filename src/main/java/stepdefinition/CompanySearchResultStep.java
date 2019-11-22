@@ -45,6 +45,7 @@ public class CompanySearchResultStep extends Base {
 				}
 			}
 			verifyOtherTabDetails();
+			Thread.sleep(3000);
 		} else {
 			ApplicationHelper.takeScreenShot();
 			Assert.assertTrue("Company Related Details page is not displayed", false);

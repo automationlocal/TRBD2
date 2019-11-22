@@ -34,6 +34,7 @@ public class BuildListSearchResultStep extends Base {
 	public void verifySearchResultspageContents() throws Throwable {
 		wait.until(
 				ExpectedConditions.textToBePresentInElement(buildListSearchResultPage.selectedTabtext(), "Companies"));
+		Thread.sleep(2000);
 		if (buildListSearchResultPage.isScreenDisplayed()
 				&& buildListSearchResultPage.selectedTabtext().getText().equalsIgnoreCase("Companies")) {
 			// System.out.println("By Default Companies Tab get selected");
@@ -52,7 +53,7 @@ public class BuildListSearchResultStep extends Base {
 				wait.until(ExpectedConditions.visibilityOfAllElements(cells));
 				for (WebElement cell : cells) {
 					if (!cell.getText().equalsIgnoreCase("COMPANIES")) {
-						Thread.sleep(4000);
+						Thread.sleep(3000);
 						cell.click();
 					}
 					System.out.println("content >>   " + cell.getText());
@@ -71,7 +72,7 @@ public class BuildListSearchResultStep extends Base {
 									+ resStr + "')]/following-sibling::span"));
 					// System.out.println(rr.size());
 					for (WebElement ee : rr) {
-						Thread.sleep(4000);
+						Thread.sleep(3000);
 						// log.info("content >> " + ee.getText());
 						log.info("Switched to Tab: " + str + " and Total Count is: " + ee.getText());
 					}

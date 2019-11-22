@@ -83,6 +83,9 @@ Given That Application is launched with the url "<URL>"
 When User login to application with "<Username>" and "<Password>"
 #When User clicks on Title
 Then Homepage should get display
+When user clicks on Logout button,LoginPage should get display
+Then Check System stored the specified Username details
+And close the browser
 
 
 Examples:
@@ -91,10 +94,10 @@ Examples:
 #
 
 @SanityTest-TRBD-1326
-Scenario: TRBD Build List Result without any filter combination
-#Given That Application is launched with the url "<URL>"
-#When User login to application with "<Username>" and "<Password>"
-When User clicks on Title
+Scenario Outline:: TRBD Build List Result without any filter combination
+
+Given That Application is launched with the url "<URL>"
+When User login to application with "<Username>" and "<Password>"
 Then Homepage should get display
 When i Click on Build List Button without selecting any filters 
 Then Verify serach result page contents
@@ -102,9 +105,9 @@ When i clicked on Company Name in the Companies tab
 Then Verify Company related information
 And click on Return Back,search result page should display
 
-#Examples:
-#|Username                                   | Password             |URL                                                        |
-#|trbd.mena2@thomsonreuters.com              | TestUser2            |https://businessdevelopment.mena.thomsonreuters.com/login  | 
+Examples:
+|Username                                   | Password             |URL                                                        |
+|trbd.mena2@thomsonreuters.com              | TestUser2            |https://businessdevelopment.mena.thomsonreuters.com/login  | 
 
 #
 
