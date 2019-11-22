@@ -33,7 +33,7 @@ public class HomeStep extends Base {
 		homePage = new HomePage(driver);
 
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream(("user.dir")+ "\\src\\main\\resources\\Data.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+ "\\src\\main\\resources\\Data.properties");
 
 		prop.load(fis);
 	}
