@@ -57,7 +57,7 @@ public class Base {
 
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\UX012817\\Automation_Sep\\Automation_Sep\\Automation\\drivers\\chromedriver.exe");
+					"drivers\\chromedriver.exe");
 			
 			//For Saucelab Execution
 			/*DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
