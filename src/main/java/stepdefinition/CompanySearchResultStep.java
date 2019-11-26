@@ -30,7 +30,7 @@ public class CompanySearchResultStep extends Base {
 
 	@Then("^Verify Company related information$")
 	public void verifySelectedCompanyDetails() throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		if (companySearchResultPage.isScreenDisplayed()) {
 			log.info("Company Related Details Page is displayed");
 			wait.until(ExpectedConditions
@@ -45,7 +45,7 @@ public class CompanySearchResultStep extends Base {
 				}
 			}
 			verifyOtherTabDetails();
-			Thread.sleep(3000);
+		
 		} else {
 			ApplicationHelper.takeScreenShot();
 			Assert.assertTrue("Company Related Details page is not displayed", false);
@@ -85,7 +85,7 @@ public class CompanySearchResultStep extends Base {
 			for (WebElement cell : cells) {
 				if (!cell.getText().equalsIgnoreCase("FAST FACTS")) {
 					cell.click();
-					Thread.sleep(200);
+					Thread.sleep(2000);
 					log.info("Clicked on " + cell.getText() + " Tab");
 					if(cell.getText().equalsIgnoreCase("OVERVIEW"))
 					{

@@ -617,7 +617,7 @@ public void verifySearchByOfficerName() throws InterruptedException, IOException
 				wait.until(ExpectedConditions.visibilityOfAllElements(cells));
 				for (WebElement cell : cells) {
 					if (cell.getText().equalsIgnoreCase("COMPANIES")) {
-						Thread.sleep(4000);
+						Thread.sleep(2000);
 						cell.click();
 						System.out.println("content >>   " + cell.getText());
 						String str = cell.getText();
@@ -668,7 +668,7 @@ public void verifySearchByOfficerName() throws InterruptedException, IOException
 						String resFilterInString = filterCount.replaceAll("\\p{P}", "");
 						log.info("Displaying Filter Counter is :" + Integer.parseInt(resFilterInString));
 						((JavascriptExecutor) driver).executeScript("window.scrollTo(0, -document.body.scrollHeight)");
-						Thread.sleep(4000);
+						Thread.sleep(2000);
 
 						assertEquals("Filter Counts are Not equal", Integer.parseInt(resFilterInString), items.size());
 						List<WebElement> filterNames = driver
