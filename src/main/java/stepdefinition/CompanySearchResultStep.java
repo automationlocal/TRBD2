@@ -33,8 +33,8 @@ public class CompanySearchResultStep extends Base {
 		Thread.sleep(5000);
 		if (companySearchResultPage.isScreenDisplayed()) {
 			log.info("Company Related Details Page is displayed");
-			wait.until(ExpectedConditions
-					.visibilityOfElementLocated(By.xpath("//collapsible-panel[contains(@header-text,'res_Company_Details_Profile')]/div/div[2]//ul/li/div")));
+//			wait.until(ExpectedConditions
+//					.visibilityOfElementLocated(By.xpath("//collapsible-panel[contains(@header-text,'res_Company_Details_Profile')]/div/div[2]//ul/li/div")));
 			List<WebElement> dd = driver.findElements(By.xpath(
 					"//collapsible-panel[contains(@header-text,'res_Company_Details_Profile')]/div/div[2]//ul/li/div"));
 			log.info("Company Related Details Are:");
@@ -44,7 +44,7 @@ public class CompanySearchResultStep extends Base {
 					i = i + 1;
 				}
 			}
-			verifyOtherTabDetails();
+			//verifyOtherTabDetails();
 		} else {
 			ApplicationHelper.takeScreenShot();
 			Assert.assertTrue("Company Related Details page is not displayed", false);
@@ -76,7 +76,7 @@ public class CompanySearchResultStep extends Base {
 		WebElement table = driver.findElement(By.xpath("//ul[contains(@class,'nav nav-tabs')]"));
 		List<WebElement> allData = table.findElements(By.tagName("li"));
 	
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[contains(@ng-show,'item.iconClassName')]/following-sibling::span[contains(@translate,'res_')]")));
+	//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[contains(@ng-show,'item.iconClassName')]/following-sibling::span[contains(@translate,'res_')]")));
 		for (WebElement row : allData) {
 			List<WebElement> cells = row.findElements(By.xpath(
 					"//i[contains(@ng-show,'item.iconClassName')]/following-sibling::span[contains(@translate,'res_')]"));
