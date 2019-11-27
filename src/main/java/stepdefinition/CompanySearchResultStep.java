@@ -30,6 +30,7 @@ public class CompanySearchResultStep extends Base {
 
 	@Then("^Verify Company related information$")
 	public void verifySelectedCompanyDetails() throws Throwable {
+		Thread.sleep(5000);
 		if (companySearchResultPage.isScreenDisplayed()) {
 			log.info("Company Related Details Page is displayed");
 			wait.until(ExpectedConditions
@@ -44,7 +45,6 @@ public class CompanySearchResultStep extends Base {
 				}
 			}
 			verifyOtherTabDetails();
-		
 		} else {
 			ApplicationHelper.takeScreenShot();
 			Assert.assertTrue("Company Related Details page is not displayed", false);
@@ -52,7 +52,6 @@ public class CompanySearchResultStep extends Base {
 		}
 		
 	}
-	
 	@And("^click on Return Back,search result page should display$")
 	public void clickOnReslutbackButton() throws InterruptedException
 	{
@@ -60,6 +59,7 @@ public class CompanySearchResultStep extends Base {
 		if(companySearchResultPage.backToResultsBtn().isDisplayed())
 		{
 			companySearchResultPage.backToResultsBtn().click();
+			Thread.sleep(5000);
 			log.info("Clicked on Back To Result Button");
 			//Assert.assertTrue("Search Result page is not displayed", buildListSearchResultPage.isScreenDisplayed());
 		}
@@ -75,7 +75,7 @@ public class CompanySearchResultStep extends Base {
 	public void verifyOtherTabDetails() throws InterruptedException {
 		WebElement table = driver.findElement(By.xpath("//ul[contains(@class,'nav nav-tabs')]"));
 		List<WebElement> allData = table.findElements(By.tagName("li"));
-		System.out.println(allData.size());
+	
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[contains(@ng-show,'item.iconClassName')]/following-sibling::span[contains(@translate,'res_')]")));
 		for (WebElement row : allData) {
 			List<WebElement> cells = row.findElements(By.xpath(
@@ -97,16 +97,16 @@ public class CompanySearchResultStep extends Base {
 						Assert.assertTrue(cell.getText()+"Tab is not displayed", companySearchResultPage.shareHolderText().isDisplayed());
 						log.info(cell.getText()+" related Info. is displayed");
 					}
-					else if(cell.getText().equalsIgnoreCase("RELATIONSHIPS"))
-					{
-						//Assert.assertTrue(cell.getText()+"Tab is not displayed", companySearchResultPage.representativeText().isDisplayed());
-						//log.info(cell.getText()+" related Info. is displayed");
-					}
-					else if(cell.getText().equalsIgnoreCase("OFFICERS"))
-					{
-						//Assert.assertTrue(cell.getText()+"Tab is not displayed", companySearchResultPage.boardOfDirectorsText().isDisplayed());
-						//log.info(cell.getText()+" related Info. is displayed");
-					}
+					/*
+					 * else if(cell.getText().equalsIgnoreCase("RELATIONSHIPS")) {
+					 * //Assert.assertTrue(cell.getText()+"Tab is not displayed",
+					 * companySearchResultPage.representativeText().isDisplayed());
+					 * //log.info(cell.getText()+" related Info. is displayed"); } else
+					 * if(cell.getText().equalsIgnoreCase("OFFICERS")) {
+					 * //Assert.assertTrue(cell.getText()+"Tab is not displayed",
+					 * companySearchResultPage.boardOfDirectorsText().isDisplayed());
+					 * //log.info(cell.getText()+" related Info. is displayed"); }
+					 */
 				}
 			}
 			break;
