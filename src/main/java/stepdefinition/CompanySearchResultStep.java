@@ -30,7 +30,6 @@ public class CompanySearchResultStep extends Base {
 
 	@Then("^Verify Company related information$")
 	public void verifySelectedCompanyDetails() throws Throwable {
-		Thread.sleep(1000);
 		if (companySearchResultPage.isScreenDisplayed()) {
 			log.info("Company Related Details Page is displayed");
 			wait.until(ExpectedConditions
@@ -61,7 +60,6 @@ public class CompanySearchResultStep extends Base {
 		if(companySearchResultPage.backToResultsBtn().isDisplayed())
 		{
 			companySearchResultPage.backToResultsBtn().click();
-			Thread.sleep(2000);
 			log.info("Clicked on Back To Result Button");
 			//Assert.assertTrue("Search Result page is not displayed", buildListSearchResultPage.isScreenDisplayed());
 		}
