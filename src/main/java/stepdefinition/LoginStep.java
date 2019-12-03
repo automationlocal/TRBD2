@@ -2,6 +2,8 @@ package stepdefinition;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Set;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -361,16 +363,29 @@ public class LoginStep extends Base {
 			log.info("Page is redirected to: " + driver.getCurrentUrl());
 			System.out.println("Page is redirected to: " + driver.getCurrentUrl());
 			// if (loginPage.isCookiePolicyDisplayed()) {
+			String actualTitle = driver.getTitle();
+			System.out.println(actualTitle);
+			if(actualTitle.contains("Network Error")) 
+			{
+				Set <String> windows = driver.getWindowHandles();
+				Iterator<String> it = windows.iterator();
+				String parent = it.next();
+				while(it.hasNext()){
+					driver.switchTo().window(it.next());
+					driver.close();
+				}
+				driver.switchTo().window(parent);
+			}
+			else {
+				WebDriverWait wt = new WebDriverWait(driver, 30);
+				wt.until(ExpectedConditions.visibilityOf(loginPage.TRBDHeadlineText()));
+				if (loginPage.TRBDHeadlineText().isDisplayed()) {
+					driver.close();
+					driver.switchTo().window(tabs2.get(0));
+			}
 			
-			WebDriverWait wt = new WebDriverWait(driver, 30);
-			wt.until(ExpectedConditions.visibilityOf(loginPage.TRBDHeadlineText()));
-			if (loginPage.TRBDHeadlineText().isDisplayed()) {
-				driver.close();
-				driver.switchTo().window(tabs2.get(0));
-			} else {
 				// ApplicationHelper.navigatePageBack();
-				ApplicationHelper.takeScreenShot();
-				Assert.assertTrue("About TRBD Screen is not displayed", false);
+				
 			}
 		}
 		else {
@@ -387,10 +402,27 @@ public class LoginStep extends Base {
 			driver.switchTo().window(tabs2.get(1));
 			String redirectedURL = driver.getCurrentUrl();
 			log.info("Page is redirected to: " + driver.getCurrentUrl());
+			
 			System.out.println("Page is redirected to: " + driver.getCurrentUrl());
+			
+			String actualTitle = driver.getTitle();
+			System.out.println(actualTitle);
+			if(actualTitle.contains("Network Error")) 
+			{
+				Set <String> windows = driver.getWindowHandles();
+				Iterator<String> it = windows.iterator();
+				String parent = it.next();
+				while(it.hasNext()){
+					driver.switchTo().window(it.next());
+					driver.close();
+				}
+				driver.switchTo().window(parent);
+			}
+			else {
 			// if (loginPage.isCookiePolicyDisplayed()) {
 			driver.close();
 			driver.switchTo().window(tabs2.get(0));
+			}
 		} /*
 			 * else { //ApplicationHelper.navigatePageBack();
 			 * ApplicationHelper.takeScreenShot();
