@@ -376,22 +376,22 @@ public class LoginStep extends Base {
 				}
 				driver.switchTo().window(parent);
 			}
-			else {
+			/*else {
 				WebDriverWait wt = new WebDriverWait(driver, 30);
 				wt.until(ExpectedConditions.visibilityOf(loginPage.TRBDHeadlineText()));
 				if (loginPage.TRBDHeadlineText().isDisplayed()) {
 					driver.close();
 					driver.switchTo().window(tabs2.get(0));
-			}
+			}*/
 			
 				// ApplicationHelper.navigatePageBack();
 				
 			}
-		}
-		else {
+		
+		/*else {
 			ApplicationHelper.takeScreenShot();
 			Assert.assertTrue("About TRBD Mena is not available", false);
-		}
+		}*/
 	}
 
 	public void clickWhySubscribeLink() throws InterruptedException {
@@ -418,11 +418,11 @@ public class LoginStep extends Base {
 				}
 				driver.switchTo().window(parent);
 			}
-			else {
+			/*else {
 			// if (loginPage.isCookiePolicyDisplayed()) {
 			driver.close();
 			driver.switchTo().window(tabs2.get(0));
-			}
+			}*/
 		} /*
 			 * else { //ApplicationHelper.navigatePageBack();
 			 * ApplicationHelper.takeScreenShot();
@@ -430,9 +430,9 @@ public class LoginStep extends Base {
 			 */
 		// navigateBackToLoginPage();
 		// }
-		else {
+		/*else {
 			ApplicationHelper.takeScreenShot();
 			Assert.assertTrue("Why Subscribe Link is not available", false);
-		}
+		}*/
 	}
 }
